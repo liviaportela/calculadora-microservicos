@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
-const calculate = require('../../api/calculate');
-const serviceUrls = require('../../config/serviceUrls');
+const calculate = require('../api/calculate');
+const serviceUrls = require('../config/serviceUrls');
 
 const app = express();
 
