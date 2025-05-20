@@ -16,6 +16,10 @@
     ],
     "routes": [
         {
+            "src": "/api/config",
+            "dest": "/src/app.js"
+        },
+        {
             "src": "/api/(.*)",
             "dest": "/api/$1"
         },
