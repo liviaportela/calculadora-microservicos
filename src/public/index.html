@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora com Microserviços</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+    <main>
+        <div class="card">
+            <h2>Calculadora</h2>
+            <form id="calcForm">
+                <label for="operation">Operação</label>
+                <select id="operation" name="operation" required>
+                    <option value="soma" selected>Soma</option>
+                    <option value="subtracao">Subtração</option>
+                    <option value="multiplicacao">Multiplicação</option>
+                    <option value="divisao">Divisão</option>
+                </select>
+
+                <label for="a">Valor A</label>
+                <input type="number" id="a" name="a" required />
+
+                <label for="b">Valor B</label>
+                <input type="number" id="b" name="b" required />
+
+                <button type="submit">Calcular</button>
+            </form>
+            <div id="result" class="result"></div>
+            <div id="error" class="error"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Gustavo Schizari, Lívia Portela, Maria Clara Cardoso</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
